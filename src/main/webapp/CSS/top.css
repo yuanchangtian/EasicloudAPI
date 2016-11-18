@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+.top{					/*设置页面头部的DIV样式*/
+	background-image:url(../images/bg_top.jpg);
+	background-size: 100% 100%;
+	width:auto;
+	height:100px;
+	margin:0px;
+}
+.navigation{			/*设置导航条的样式*/
+	background-image:url(../images/navigation_bg.jpg);
+	background-size: 100% 100%;
+	width:auto;
+	height:26px;
+	padding:5px 5px 0px 5px;
+	margin: 0px;
+}

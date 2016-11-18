@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+* {
+	font-size: 12px;
+	font-family: 微软雅黑, Arial, Tahoma, Arial, Helvetica, sans-serif;
+}
+/*common*/
+.date {
+	width: 80px;
+}
+
+.wrap {
+	padding: 5px 2px 5px 5px;
+	text-align: left;
+}
+table.data {
+	background: #dddddd none repeat scroll 0%;
+	width: 100%;
+}
+
+table.data td {
+	padding: 3px 5px;
+	text-align:center;
+	align:left;
+}
+table.data th {
+	background-color: #eeeeee;
+	line-height: 25px;
+	padding: 3pt 10px;
+	white-space: nowrap;
+	text-align: center;
+	color: #333333;
+	align:left;
+}
+
+table.data tr.tr1 {
+	background: #ffffff none repeat scroll 0%;
+}
+
+.pagination {
+	margin: 1.5em 0;
+	text-align: left;
+}
+.myTag{
+	font-size:20px;
+}
+.button{
+	width: 100px;
+    height: 33px;
+    font-size:12px;
+    text-align: center;
+    cursor: pointer;
+}

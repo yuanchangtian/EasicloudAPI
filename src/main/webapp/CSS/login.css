@@ -1,0 +1,129 @@
+.login {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 50px auto auto auto;
+    width: 900px;
+    height: 600px;
+    background: url("../images/logreg_bg.jpg") no-repeat center center;
+}
+.login_alpha {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 610px;
+    height: 362px;
+    margin: -181px -305px;
+    background: #FFFFFF;
+    opacity: .1;
+    filter: alpha(opacity=10);
+}
+.login_wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 610px;
+    height: 362px;
+    margin: -181px -305px;
+}
+.purple_bar {
+    width: 100%;
+    height: 6px;
+    background: #745ec5;
+}
+.err_info {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #666666;
+    background: #FFFFFF;
+}
+.err_close {
+    margin: 0 10px;
+}
+.err_text {
+    float: left;
+}
+.err_constant {
+    color: #eb4f38;
+}
+.err_close {
+    float: right;
+    margin-top: 3px;
+}
+.head {
+    clear: both;
+    margin: 73px 0 0 36px;
+    width: 118px;
+    height: 118px;
+    background: url("../images/zkth.jpg") no-repeat center center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    float: left;
+}
+.divider {
+    width: 2px;
+    height: 260px;
+    background: #FFFFFF;
+    float: left;
+    margin: 20px 0 0 36px;
+}
+.myForm {
+    float: left;
+    margin: 25px 0 0 96px;
+    width: 225px;
+}
+label {
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.import {
+    width: 225px;
+    height: 35px;
+    line-height: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+}
+.password_w {
+    margin-top: 22px;
+}
+.extra {
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+}
+
+.extra_l {
+    float: left;
+}
+
+.extra_l a,
+.extra_l a:hover {
+    color: #9d85f6;
+    text-decoration: underline;
+}
+
+.extra_r {
+    float: right;
+    color: #333333;
+}
+
+.submit {
+    width: 225px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #745ec5;
+    cursor: pointer;
+    margin-top: 20px;
+}

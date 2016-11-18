@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration PUBLIC  
+    "-//mybatis.org//DTD Config 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>  
+    <mappers>  
+        <!-- <mapper resource="com/ictwsn/UserMapper.xml"/>   -->
+        <!-- <mapper resource="com/bird/mybatis/bean/userMapper.xml" />  -->
+        <mapper class="com.ictwsn.UserMapper"/>
+        <mapper class="com.ictwsn.user.dao.UserDao"/>    
+        <mapper class="com.ictwsn.api.device.DeviceDao"/>
+        <mapper class="com.ictwsn.api.sensor.SensorDao"/>  
+        <mapper class="com.ictwsn.api.datapoint.DatapointDao"/>  
+        <mapper class="com.ictwsn.device.dao.DeviceManageDao"/>
+        <mapper class="com.ictwsn.sensor.dao.SensorManageDao"/>
+        <mapper class="com.ictwsn.analysis.dao.DataAnalysisDao"/>
+    </mappers>  
+</configuration>  

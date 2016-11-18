@@ -1,0 +1,68 @@
+.register {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 50px auto auto auto;
+    width: 900px;
+    height: 600px;
+    background: url("../images/logreg_bg.jpg") no-repeat center center;
+}
+.input_label{
+    display: block;
+    width: 100px;
+    height: 10px;
+    align:bottom;
+    color: #333333;
+    line-height: 60px;
+    text-indent: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.getcode_button{
+    display: inline-block;
+    padding: 8px;
+     background: #FFFFFF; 
+    margin-left: 10px;
+    /* color: #000000; */
+    /* color: #b2b2b2; */
+    cursor: pointer;
+}
+.register_button{
+     width: 220px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ff7a40;
+    margin: 50px 0 0 100px;
+    cursor: pointer;
+}
+.input_text{
+    margin-left: 100px;
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    border: 1px solid #cccccc;
+    text-indent: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.have_account{
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 50px 0 0 100px;
+    cursor: pointer;
+}
+.hint_span{
+    width: 100px;
+    height: 10px;
+    color: #ff0000;
+}

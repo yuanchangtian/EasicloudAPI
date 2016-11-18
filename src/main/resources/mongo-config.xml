@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+    xmlns:p="http://www.springframework.org/schema/p"   
+    xmlns:mongo="http://www.springframework.org/schema/data/mongo"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+            http://www.springframework.org/schema/data/mongo  
+            http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">  
+    <!--  mongodb配置 ，权限认证 -->
+    <!-- host="10.22.0.78" --> 
+     <!-- host="127.0.0.1" --> 
+     <mongo:db-factory id="mongoDbFactory"  
+                 host="127.0.0.1"
+                  port="27017"  
+                  dbname="test" 
+                  username="ruo"  
+                  password="123456"/> 
+                  
+   <bean id="mappingContext" class="org.springframework.data.mongodb.core.mapping.MongoMappingContext" />             
+   <bean id="mappingMongoConverter" class="org.springframework.data.mongodb.core.convert.MappingMongoConverter">
+   <constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+   <constructor-arg name="mappingContext" ref="mappingContext" />
+   <property name="typeMapper" ref="defaultMongoTypeMapper" />
+	</bean>
+		<bean id="defaultMongoTypeMapper" class="org.springframework.data.mongodb.core.convert.DefaultMongoTypeMapper">
+		<constructor-arg name="typeKey">
+			<null /><!-- 这里设置为空,可以把 spring data mongodb 多余保存的_class字段去掉 -->
+		</constructor-arg>
+	</bean>   
+                  
+   <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">  
+            <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>    
+    <constructor-arg name="mongoConverter" ref="mappingMongoConverter" />
+    </bean>  
+    
+    
+    
+    <!-- mongodb非权限认证 -->
+    
+   <!--  <mongo:mongo host="10.22.0.128" port="28885" />
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+    <constructor-arg ref="mongo" />
+    <constructor-arg name="databaseName" value="easicloud" />
+	</bean> -->
+    
+       
+</beans>
