@@ -30,6 +30,13 @@ public class MongoDBJDBC {
 							"123456".toCharArray());
 			credentials = new ArrayList<MongoCredential>();
 			credentials.add(credential);
+			
+			/*
+			 * 没有用户名密码时将static整个给注释掉，并将下面的mongoClient = new MongoClient(addrs, credentials);
+			 * 给替换成mongoClient = new MongoClient( "localhost" , 27017 );即可
+	        */
+			
+			
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
