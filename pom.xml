@@ -143,7 +143,13 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.3.5</version>
 		</dependency>
+		<!-- mongodb client -->
 
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver</artifactId>
+			<version>3.3.0</version>
+		</dependency>
 
 
 	</dependencies>
